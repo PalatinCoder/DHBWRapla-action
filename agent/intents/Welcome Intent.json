@@ -1,0 +1,36 @@
+{
+  "id": "efca2e0f-db1c-47cc-9f74-6b2bddbf2e28",
+  "name": "Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": [
+            "Hi, hier ist der Rapla. Ich habe immer Recht! Was möchtest du von mir wissen?",
+            "Hi, hier ist der Rapla. Ich habe immer Recht! Was kann ich für dich tun?",
+            "Hallo, hier ist der Rapla. Ich habe immer Recht! Wie kann ich dir helfen?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

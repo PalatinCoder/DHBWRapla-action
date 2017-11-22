@@ -1,0 +1,20 @@
+{
+  "name": "dhbw-rapla",
+  "description": "Informiert dich über deinen Rapla",
+  "version": "0.0.1-alpha",
+  "author": "Jan Syring-Lingenfelder <kontakt@jan-sl.de> (https://www.jan-sl.de/)",
+  "license": "MIT",
+  "repository": "PalatinCoder/dhbw-rapla-action",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "firebase-admin": "~5.5.0",
+    "firebase-functions": "^0.7.1"
+  }
+}

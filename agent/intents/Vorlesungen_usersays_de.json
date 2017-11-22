@@ -1,0 +1,24 @@
+[
+  {
+    "id": "f70bf1b1-d18b-4148-a401-b769af1a4144",
+    "data": [
+      {
+        "text": "Welche Vorlesungen habe ich ",
+        "userDefined": false
+      },
+      {
+        "text": "morgen",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511296594
+  }
+]

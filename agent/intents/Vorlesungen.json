@@ -1,0 +1,49 @@
+{
+  "id": "39a66724-d95c-4e6f-a68b-ab1a086406f2",
+  "name": "Vorlesungen",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "request.lectures",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e3b0e474-26e6-474c-a64c-f03fa4cb377d",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            {
+              "lang": "de",
+              "value": "An welchem Tag?"
+            },
+            {
+              "lang": "de",
+              "value": "Wann genau?"
+            }
+          ],
+          "defaultValue": "morgen",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511296594,
+  "fallbackIntent": false,
+  "events": []
+}
