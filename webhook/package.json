@@ -6,11 +6,6 @@
   "license": "MIT",
   "repository": "PalatinCoder/dhbw-rapla-action",
   "scripts": {
-    "serve": "firebase serve --only functions",
-    "shell": "firebase experimental:functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
   },
   "dependencies": {
     "actions-on-google": "^1.0.0",
