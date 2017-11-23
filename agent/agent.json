@@ -21,7 +21,7 @@
   },
   "defaultTimezone": "Europe/Madrid",
   "webhook": {
-    "url": "https://us-central1-dhbw-rapla.cloudfunctions.net/dhbwrapla",
+    "url": "https://dhbwrapla.jan-sl.de/",
     "headers": {
       "": ""
     },
