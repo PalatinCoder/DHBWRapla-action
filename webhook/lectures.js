@@ -10,7 +10,7 @@ function getLectures(app) {
   
   request('https://rapla.dhbw-karlsruhe.de/rapla?page=iCal&user=vollmer&file=tinf15b3', function(error, response, body) {
     if (error || response.statusCode != 200) {
-      app.tell('Ich kann deinen Vorlesungsplan nicht abrufen. Bitte überprüfe deine Rapla URL.');
+      app.tell('<speak>Ich kann deinen Vorlesungsplan nicht abrufen. Bitte überprüfe deine Rapla <say-as interpret-as="characters">URL</say-as></speak>');
       return;
     }
      app.tell(buildAnswer(body, date));
@@ -31,11 +31,14 @@ function buildAnswer(ics, date) {
     return a.startDate.toJSDate() - b.startDate.toJSDate();
   });
   
-  var answer = "Folgende Vorlesungen stehen für " + date + " in Rapla: ";
+  var answer = "<speak>Folgende Vorlesungen stehen für " + date + " in Rapla:<p>";
   allEvents.map((element, index, array) => { 
+    if (index == array.length -1) answer += "und";
+    answer += "<s>"
     answer += element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,""); // Regex eliminates class names from the summary
     answer += " um " + element.startDate.toJSDate().toLocaleTimeString();
-    if (index !== array.length -1) answer += ", "
+    answer += "</s>";
   });
+  answer += "</p></speak>";
   return answer;
 }
