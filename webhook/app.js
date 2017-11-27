@@ -11,9 +11,14 @@ app.use(bodyParser.json({type: 'application/json'}));
 
 app.post('/', function(request, response) {  
   const app = new App({request, response});
-  const getLectures = require('./lectures').getLectures;
+  const lectures = require('./lectures');
+  const raplaurl = require('./rapla-url');
+  
   let actionMap = new Map();
-  actionMap.set('request.lectures', getLectures);
+  actionMap.set('request.lectures', lectures.getLectures);
+  actionMap.set('set.rapla-url', raplaurl.setRaplaUrl);
+  actionMap.set('delete.rapla-url', raplaurl.deleteRaplaUrl);
+  actionMap.set('tell.rapla-url', raplaurl.tellRaplaUrl);
   app.handleRequest(actionMap);
 });
 

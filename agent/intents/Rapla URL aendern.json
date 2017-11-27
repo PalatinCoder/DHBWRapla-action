@@ -1,0 +1,58 @@
+{
+  "id": "be80546b-9d82-4293-89e8-ba7ed794c6b3",
+  "name": "Rapla URL aendern",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "set.rapla-url",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "60e4c698-e930-474e-97a4-2d9c7db72061",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "rapla-user",
+          "value": "$rapla-user",
+          "prompts": [
+            {
+              "lang": "de",
+              "value": "Unter welchem Benutzer ist dein Rapla gespeichert?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "bc93173a-7aa1-4b60-bc94-28e1dd4b2b52",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "rapla-file",
+          "value": "$rapla-file",
+          "prompts": [
+            {
+              "lang": "de",
+              "value": "Wie heißt die Datei?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511772609,
+  "fallbackIntent": false,
+  "events": []
+}

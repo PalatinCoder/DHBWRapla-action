@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ac75ffdc-bd2c-48cc-a878-93514a9b778b",
+    "data": [
+      {
+        "text": "Welche Rapla URL hast du gespeichert?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1511783518
+  },
+  {
+    "id": "57a7d2dd-b46c-4959-b929-ec8670c54f41",
+    "data": [
+      {
+        "text": "Wie ist meine Rapla URL?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511783518
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "3afb908d-bc2a-4596-b894-e3e34a3ab66d",
+  "name": "Rapla URL abfragen",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell.rapla-url",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511783518,
+  "fallbackIntent": false,
+  "events": []
+}

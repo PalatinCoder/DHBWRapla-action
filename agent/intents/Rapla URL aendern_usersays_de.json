@@ -1,0 +1,46 @@
+[
+  {
+    "id": "97c2e553-7bed-4b14-b5ff-a1588781511a",
+    "data": [
+      {
+        "text": "Der Benutzer ist @sys.any:rapla-user und die Datei ist @sys.any:rapla-file",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": true,
+    "count": 1
+  },
+  {
+    "id": "27dacf37-c763-4982-b206-c5d9847ba257",
+    "data": [
+      {
+        "text": "Ändere meine Rapla URL, der Benutzer ist @sys.any:rapla-user und die Datei ist @sys.any:rapla-file",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": true,
+    "count": 1
+  },
+  {
+    "id": "063a8d61-8fbb-499e-8dc6-e06bcc14d740",
+    "data": [
+      {
+        "text": "Andere meine Rapla URL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "316d935c-5b5e-4436-9532-af2ad65ecbaf",
+    "data": [
+      {
+        "text": "Speichere meine Rapla URL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]
