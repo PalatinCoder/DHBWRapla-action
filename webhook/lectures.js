@@ -5,8 +5,6 @@ const request = require('request');
 
 exports.getLectures = getLectures;
 
-// TODO to save url use userStorage as in: https://developers.google.com/actions/assistant/best-practices#personalize_the_conversation_with_user_preferences
-
 const ssml = (template, ...inputs) => template.reduce((out, str, i) => i
   ? out + (
     inputs[i - 1]
@@ -22,7 +20,13 @@ const ssml = (template, ...inputs) => template.reduce((out, str, i) => i
 function getLectures(app) {
   let date = app.getArgument('date');
   
-  request('https://rapla.dhbw-karlsruhe.de/rapla?page=iCal&user=vollmer&file=tinf15b3', function(error, response, body) {
+  
+  if (!app.userStorage.raplaurl)  {
+    app.ask(ssml`<speak><s>Dazu benötige ich deine Rapla <say-as interpret-as="characters">URL</say-as></s><s>Bitte sage mir, unter welchem Benutzernamen und welcher Datei dein Rapla gespeichert ist.</s></speak>`);
+    return;
+  }
+  
+  request(app.userStorage.raplaurl, function(error, response, body) {
     if (error || response.statusCode != 200) {
       app.tell(ssml`<speak>Ich kann deinen Vorlesungsplan nicht abrufen. Bitte überprüfe deine Rapla <say-as interpret-as="characters">URL</say-as></speak>`);
       return;
@@ -45,7 +49,7 @@ function buildAnswer(ics, date) {
     return a.startDate.toJSDate() - b.startDate.toJSDate();
   });
   
-  var answer = ssml`<speak>Folgende Vorlesungen stehen für ${date} in Rapla:<p>`;
+  var answer = ssml`<speak>Folgende Vorlesungen stehen für den ${date} in Rapla:<p>`;
   allEvents.map((element, index, array) => {
     // Regex eliminates class names from the summary
     // also insert 'und' before the last element
