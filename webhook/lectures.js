@@ -5,15 +5,29 @@ const request = require('request');
 
 exports.getLectures = getLectures;
 
+// TODO to save url use userStorage as in: https://developers.google.com/actions/assistant/best-practices#personalize_the_conversation_with_user_preferences
+
+const ssml = (template, ...inputs) => template.reduce((out, str, i) => i
+  ? out + (
+    inputs[i - 1]
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+  ) + str
+  : str
+).trim().replace(/\s+/g, ' ').replace(/ </g, '<').replace(/> /g, '>');
+
+
 function getLectures(app) {
   let date = app.getArgument('date');
   
   request('https://rapla.dhbw-karlsruhe.de/rapla?page=iCal&user=vollmer&file=tinf15b3', function(error, response, body) {
     if (error || response.statusCode != 200) {
-      app.tell('<speak>Ich kann deinen Vorlesungsplan nicht abrufen. Bitte überprüfe deine Rapla <say-as interpret-as="characters">URL</say-as></speak>');
+      app.tell(ssml`<speak>Ich kann deinen Vorlesungsplan nicht abrufen. Bitte überprüfe deine Rapla <say-as interpret-as="characters">URL</say-as></speak>`);
       return;
     }
-     app.tell(buildAnswer(body, date));
+    app.tell(buildAnswer(body, date));
   });
 }
 
@@ -25,19 +39,21 @@ function buildAnswer(ics, date) {
   const mappedOccurrences = events.occurrences.map(o => ({ startDate: o.startDate, summary: o.item.summary }));
   const allEvents = [].concat(mappedEvents, mappedOccurrences);
   
-  if (allEvents.length == 0) return "Du hast am " + date + " keine Vorlesungen";
+  if (allEvents.length == 0) return ssml`Du hast am ${date} keine Vorlesungen`;
   
   allEvents.sort(function(a, b) {
     return a.startDate.toJSDate() - b.startDate.toJSDate();
   });
   
-  var answer = "<speak>Folgende Vorlesungen stehen für " + date + " in Rapla:<p>";
-  allEvents.map((element, index, array) => { 
-    if (index == array.length -1) answer += "und";
-    answer += "<s>"
-    answer += element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,""); // Regex eliminates class names from the summary
-    answer += " um " + element.startDate.toJSDate().toLocaleTimeString();
-    answer += "</s>";
+  var answer = ssml`<speak>Folgende Vorlesungen stehen für ${date} in Rapla:<p>`;
+  allEvents.map((element, index, array) => {
+    // Regex eliminates class names from the summary
+    // also insert 'und' before the last element
+    answer += ssml`
+    ${array[index+1] ? '':'und' }
+    <s>
+      ${element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,"")} um ${element.startDate.toJSDate().toLocaleTimeString()}
+    </s>`
   });
   answer += "</p></speak>";
   return answer;
