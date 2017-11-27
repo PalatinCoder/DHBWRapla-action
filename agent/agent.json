@@ -22,6 +22,7 @@
   "defaultTimezone": "Europe/Madrid",
   "webhook": {
     "url": "https://dhbwrapla.jan-sl.de/",
+    "username": "google-assistant",
     "headers": {
       "": ""
     },
