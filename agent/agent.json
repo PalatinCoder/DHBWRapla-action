@@ -6,7 +6,12 @@
     "googleAssistantCompatible": true,
     "project": "dhbw-rapla",
     "welcomeIntentSignInRequired": false,
-    "startIntents": [],
+    "startIntents": [
+      {
+        "intentId": "39a66724-d95c-4e6f-a68b-ab1a086406f2",
+        "signInRequired": false
+      }
+    ],
     "systemIntents": [],
     "endIntentIds": [
       "39a66724-d95c-4e6f-a68b-ab1a086406f2"
@@ -17,7 +22,8 @@
     },
     "voiceType": "MALE_1",
     "capabilities": [],
-    "protocolVersion": "V2"
+    "protocolVersion": "V2",
+    "autoPreviewEnabled": true
   },
   "defaultTimezone": "Europe/Madrid",
   "webhook": {

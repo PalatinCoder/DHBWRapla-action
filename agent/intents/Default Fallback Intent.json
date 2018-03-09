@@ -1,7 +1,7 @@
 {
   "id": "cd9a1e43-0310-4ae9-8990-ba1d2a08dd1c",
   "name": "Default Fallback Intent",
-  "auto": true,
+  "auto": false,
   "contexts": [],
   "responses": [
     {

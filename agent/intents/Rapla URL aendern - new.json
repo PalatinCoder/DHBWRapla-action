@@ -1,8 +1,10 @@
 {
-  "id": "be80546b-9d82-4293-89e8-ba7ed794c6b3",
-  "name": "Rapla URL aendern",
+  "id": "52584ca1-a96a-4d44-997d-2cdab0703bcf",
+  "name": "Rapla URL aendern - new",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "new_rapla-url"
+  ],
   "responses": [
     {
       "resetContexts": false,
@@ -16,7 +18,7 @@
       ],
       "parameters": [
         {
-          "id": "60e4c698-e930-474e-97a4-2d9c7db72061",
+          "id": "73b9aeff-3439-4d62-a965-ac3fe1334c7a",
           "required": true,
           "dataType": "@rapla-user",
           "name": "rapla-user",
@@ -24,13 +26,13 @@
           "prompts": [
             {
               "lang": "de",
-              "value": "Unter welchem Benutzer ist dein Rapla gespeichert?"
+              "value": "Wie ist der Benutzername?"
             }
           ],
           "isList": false
         },
         {
-          "id": "bc93173a-7aa1-4b60-bc94-28e1dd4b2b52",
+          "id": "931777d9-d7b0-4f7d-ba19-796d602d0407",
           "required": true,
           "dataType": "@rapla-file",
           "name": "rapla-file",
@@ -50,13 +52,13 @@
           "platform": "google",
           "lang": "de",
           "customizeAudio": true,
-          "textToSpeech": "Okay, ich finde deinen Rapla unter dem Benutzer $rapla-user und dem Dateinamen $rapla-file. Ist das korrekt?",
-          "displayText": "Okay, ich verwende folgende Rapla URL: https://rapla.dhbw-karlsruhe.de/?page\u003diCal\u0026user\u003d$rapla-user\u0026file\u003d$rapla-file. Ist das korrekt?"
+          "textToSpeech": "Okay, ich verwende folgende Rapla URL. Stimmt das?",
+          "displayText": "Okay, ich verwende folgende Rapla URL: https://rapla.dhbw-karlsruhe.de/rapla?page\u003diCal\u0026user\u003d$rapla-user\u0026file\u003d$rapla-file. Korrekt?"
         },
         {
           "type": 0,
           "lang": "de",
-          "speech": "Okay, ich verwende folgende Rapla URL: https://rapla.dhbw-karlsruhe.de/?page\u003diCal\u0026user\u003d$rapla-user\u0026file\u003d$rapla-file. Ist das korrekt?"
+          "speech": "Okay, ich verwende folgende Rapla URL: \u0027https://rapla.dhbw-karlsruhe.de/rapla?page\u003diCal\u0026user\u003d$rapla-user\u0026file\u003d$rapla-file\u0027. Stimmt es jetzt?"
         }
       ],
       "defaultResponsePlatforms": {
@@ -68,7 +70,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1520583871,
+  "lastUpdate": 1520584516,
   "fallbackIntent": false,
   "events": []
 }

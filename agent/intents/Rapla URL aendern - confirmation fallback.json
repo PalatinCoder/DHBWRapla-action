@@ -1,0 +1,36 @@
+{
+  "id": "04e5a4c7-c7a9-4d20-9cf7-99ede4da2003",
+  "name": "Rapla URL aendern - confirmation fallback",
+  "auto": false,
+  "contexts": [
+    "rapla-url"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "rapla-url",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": "Bitte antworte mit \u0027Ja\u0027 oder \u0027Nein\u0027."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512137249,
+  "fallbackIntent": true,
+  "events": []
+}

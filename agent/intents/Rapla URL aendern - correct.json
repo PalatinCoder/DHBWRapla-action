@@ -1,0 +1,52 @@
+{
+  "id": "2d147a3d-d52e-4c17-bc5b-9b731215e469",
+  "name": "Rapla URL aendern - correct",
+  "auto": true,
+  "contexts": [
+    "rapla-url"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "set.rapla-url",
+      "affectedContexts": [
+        {
+          "name": "rapla-url",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0f133e89-397c-4572-b1f3-bf06cbd51a45",
+          "required": false,
+          "name": "rapla-user",
+          "value": "#rapla-url.rapla-user",
+          "isList": false
+        },
+        {
+          "id": "fae1fe92-c749-4189-a108-205426cda88d",
+          "required": false,
+          "name": "rapla-file",
+          "value": "#rapla-url.rapla-file",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512123649,
+  "fallbackIntent": false,
+  "events": []
+}

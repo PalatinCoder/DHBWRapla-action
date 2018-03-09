@@ -1,0 +1,44 @@
+{
+  "id": "fc690939-ba1d-422e-8367-f02ee7af80fb",
+  "name": "Rapla URL aendern - incorrect",
+  "auto": true,
+  "contexts": [
+    "rapla-url"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "rapla-url",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "new_rapla-url",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": [
+            "Okay, wie lauten Benutzer und Dateiname?",
+            "Kein Problem, wie lauten Benutzer und Dateiname?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512123741,
+  "fallbackIntent": false,
+  "events": []
+}
