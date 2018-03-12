@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f01e29c4-9c46-4868-98fc-73840313abd2",
+    "data": [
+      {
+        "text": "was kann ich sagen?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842819
+  },
+  {
+    "id": "982d9625-4677-4c1a-9297-a5c7d4523fc3",
+    "data": [
+      {
+        "text": "was kannst du?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842819
+  },
+  {
+    "id": "0746998c-b381-4005-9659-3f1d4b178392",
+    "data": [
+      {
+        "text": "hilfe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842819
+  }
+]

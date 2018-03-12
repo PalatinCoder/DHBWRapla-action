@@ -1,0 +1,53 @@
+{
+  "id": "cc839c28-f373-4035-9fe4-9acbf1a23a99",
+  "name": "Hilfe",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "further_action",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "de",
+          "customizeAudio": true,
+          "textToSpeech": "Du kannst mich fragen, welche Vorlesungen du an einem bestimmten Tag hast.\nDazu brauche ich natürlich deine Rapla URL. Ich werde dich nach Benutzernamen und Dateinamen fragen, beides kannst du aus deiner Rapla URL ablesen.\nUm deine Rapla URL zu ändern, sage \"ändere meine Rapla URL\". Führe dies eventuell auf einem Smartphone durch, da du dann die URL besser kontrollieren kannst.\n\nKann ich noch etwas für dich tun?",
+          "displayText": "Du kannst mich fragen, welche Vorlesungen du an einem bestimmten Tag hast.\n\nDazu brauche ich natürlich deine Rapla URL. Ich werde dich nach Benutzernamen und Dateinamen fragen, beides kannst du aus deiner Rapla URL ablesen. Sie sieht etwa so aus: htttps://rapla.dhbw-karlsruhe.de/rapla?page\u003diCal\u0026user\u003d####\u0026file\u003d####\n\nIch benötige nur den Benutzer (user) und den Dateinamen (file).\nWenn du keine Rapla URL hast, wende dich bitte an deinen Studiengangsleiter.\n\nKann ich noch etwas für dich tun?"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "de",
+          "suggestions": [
+            {
+              "title": "Wann habe ich Vorlesung?"
+            },
+            {
+              "title": "Wie ist meine Rapla URL?"
+            },
+            {
+              "title": "Ändere meine Rapla URL"
+            }
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520842819,
+  "fallbackIntent": false,
+  "events": []
+}
