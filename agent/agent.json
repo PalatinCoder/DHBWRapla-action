@@ -14,7 +14,8 @@
     ],
     "systemIntents": [],
     "endIntentIds": [
-      "39a66724-d95c-4e6f-a68b-ab1a086406f2"
+      "39a66724-d95c-4e6f-a68b-ab1a086406f2",
+      "b19fe191-fa3a-4b42-ad21-682d62c41315"
     ],
     "oAuthLinking": {
       "required": false,

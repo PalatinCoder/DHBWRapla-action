@@ -1,0 +1,50 @@
+[
+  {
+    "id": "5baf52ac-b439-4036-b4f9-91500f064f03",
+    "data": [
+      {
+        "text": "tschüss",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842938
+  },
+  {
+    "id": "a000da70-1ce4-4f77-877a-7d4fbb8d06da",
+    "data": [
+      {
+        "text": "nein",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842938
+  },
+  {
+    "id": "64c12c2d-3f39-4290-90c1-146e2dbb1a61",
+    "data": [
+      {
+        "text": "nein danke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842938
+  },
+  {
+    "id": "2fdb46e3-841e-4bf0-afc6-12a9de74991e",
+    "data": [
+      {
+        "text": "das war\u0027s",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520842938
+  }
+]

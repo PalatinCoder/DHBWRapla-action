@@ -1,0 +1,34 @@
+{
+  "id": "b19fe191-fa3a-4b42-ad21-682d62c41315",
+  "name": "Weitere Aktion - nein",
+  "auto": true,
+  "contexts": [
+    "further_action"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": [
+            "Okay, bis zum nächsten mal!",
+            "Alles klar, tschüss!",
+            "Und tschüss..."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520842938,
+  "fallbackIntent": false,
+  "events": []
+}

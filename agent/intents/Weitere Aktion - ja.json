@@ -1,0 +1,60 @@
+{
+  "id": "deb9d75c-de6a-48c0-a61d-8582635d1b2e",
+  "name": "Weitere Aktion - ja",
+  "auto": true,
+  "contexts": [
+    "further_action"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [
+        {
+          "name": "further_action",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "de",
+          "customizeAudio": true,
+          "textToSpeech": "Was kann ich für dich tun? \nMöchtest du wissen, wann du Vorlesungen hast? Oder möchtest du deine Rapla URL ändern?",
+          "displayText": "Was kann ich für dich tun?"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "de",
+          "suggestions": [
+            {
+              "title": "Wann habe ich Vorlesung?"
+            },
+            {
+              "title": "Wie ist meine Rapla URL?"
+            },
+            {
+              "title": "Ändere meine Rapla URL"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": "Was kann ich für dich tun?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520843065,
+  "fallbackIntent": false,
+  "events": []
+}
