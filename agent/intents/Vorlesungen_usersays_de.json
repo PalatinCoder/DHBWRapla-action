@@ -1,6 +1,18 @@
 [
   {
-    "id": "3e21e8ae-21a5-4a43-afb2-43be1287d8a5",
+    "id": "fe6f209e-1a11-435b-be86-a64b4b7bcb06",
+    "data": [
+      {
+        "text": "wann habe ich Vorlesung?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520843369
+  },
+  {
+    "id": "4b3540c5-593d-477b-8f60-069a11342210",
     "data": [
       {
         "text": "Wann muss ich ",
@@ -10,7 +22,7 @@
         "text": "morgen",
         "alias": "date",
         "meta": "@sys.date",
-        "userDefined": false
+        "userDefined": true
       },
       {
         "text": " in die Uni?",
@@ -19,10 +31,32 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1520584704
+    "updated": 1520843369
   },
   {
-    "id": "4d16c5d1-bca1-45d0-aecb-1a5be5419ac2",
+    "id": "f04ca56f-3191-47c7-ac50-44ad13fafcbf",
+    "data": [
+      {
+        "text": "wann ich ",
+        "userDefined": false
+      },
+      {
+        "text": "morgen",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " Vorlesung habe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c2fbdf30-60f0-4929-a0d7-ee191cdf3e50",
     "data": [
       {
         "text": "Wann habe ich ",
@@ -44,7 +78,7 @@
     "updated": 1520584704
   },
   {
-    "id": "caae0a3f-6983-4533-b641-e87a0da4f4c7",
+    "id": "6a2f1467-4787-4a96-a2f2-3b6d0634b5b6",
     "data": [
       {
         "text": "Welche Vorlesungen habe ich ",
@@ -63,6 +97,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1511296594
+    "updated": 1520843369
   }
 ]
