@@ -7,7 +7,13 @@
     {
       "resetContexts": false,
       "action": "tell.rapla-url",
-      "affectedContexts": [],
+      "affectedContexts": [
+        {
+          "name": "further_action",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
       "parameters": [],
       "messages": [
         {
@@ -23,7 +29,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1511783518,
+  "lastUpdate": 1520843262,
   "fallbackIntent": false,
   "events": []
 }

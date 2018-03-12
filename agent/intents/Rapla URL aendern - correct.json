@@ -7,13 +7,13 @@
   ],
   "responses": [
     {
-      "resetContexts": true,
+      "resetContexts": false,
       "action": "set.rapla-url",
       "affectedContexts": [
         {
-          "name": "rapla-url",
+          "name": "further_action",
           "parameters": {},
-          "lifespan": 5
+          "lifespan": 1
         }
       ],
       "parameters": [
@@ -46,7 +46,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1512123649,
+  "lastUpdate": 1520843297,
   "fallbackIntent": false,
   "events": []
 }
