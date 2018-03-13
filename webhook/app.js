@@ -1,6 +1,5 @@
 'use strict';
 
-process.env.DEBUG = 'actions-on-google:*';
 const App = require('actions-on-google').DialogflowApp;
 const express = require('express');
 const bodyParser = require('body-parser');
