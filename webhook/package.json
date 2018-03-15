@@ -1,12 +1,11 @@
 {
   "name": "dhbw-rapla",
   "description": "Informiert dich über deinen Rapla",
-  "version": "0.0.1-alpha",
+  "version": "1.0.0",
   "author": "Jan Syring-Lingenfelder <kontakt@jan-sl.de> (https://www.jan-sl.de/)",
   "license": "MIT",
-  "repository": "PalatinCoder/dhbw-rapla-action",
-  "scripts": {
-  },
+  "repository": "PalatinCoder/DHBWRapla-action",
+  "scripts": {},
   "dependencies": {
     "actions-on-google": "^1.10.0",
     "body-parser": "~1.18.2",
