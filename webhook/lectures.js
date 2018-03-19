@@ -39,8 +39,8 @@ function buildAnswer(ics, date) {
   const icalExpander = new IcalExpander({ ics, maxIterations: 10 });
   const events = icalExpander.between(new Date(date+'T00:00:00.000Z'), new Date(date+'T23:59:59.000Z'));
   
-  const mappedEvents = events.events.map(e => ({ startDate: e.startDate, summary: e.summary }));
-  const mappedOccurrences = events.occurrences.map(o => ({ startDate: o.startDate, summary: o.item.summary }));
+  const mappedEvents = events.events.map(e => ({ startDate: e.startDate, endDate: e.endDate, summary: e.summary }));
+  const mappedOccurrences = events.occurrences.map(o => ({ startDate: o.startDate, endDate: o.endDate, summary: o.item.summary }));
   const allEvents = [].concat(mappedEvents, mappedOccurrences);
   
   if (allEvents.length == 0) return ssml`Du hast am ${date} keine Vorlesungen`;
@@ -56,7 +56,7 @@ function buildAnswer(ics, date) {
     answer += ssml`
     ${array[index+1] ? '':'und' }
     <s>
-      ${element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,"")} um ${element.startDate.toJSDate().toLocaleTimeString()}
+      ${element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,"")} von ${element.startDate.toJSDate().toLocaleTimeString()} bis ${element.endDate.toJSDate().toLocaleTimeString()}
     </s>`
   });
   answer += "</p></speak>";
