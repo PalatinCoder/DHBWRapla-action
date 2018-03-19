@@ -54,7 +54,7 @@ function buildAnswer(ics, date) {
     // Regex eliminates class names from the summary
     // also insert 'und' before the last element
     answer += ssml`
-    ${array[index+1] ? '':'und' }
+    ${(array.length > 1 && index == array.length-1) ? 'und':'' }
     <s>
       ${element.summary.replace(/ ?[A-Z0-9]{8},? ?/g,"")} von ${element.startDate.toJSDate().toLocaleTimeString()} bis ${element.endDate.toJSDate().toLocaleTimeString()}
     </s>`
